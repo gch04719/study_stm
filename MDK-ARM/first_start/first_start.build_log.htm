@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>킮ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: choi gwangbin, sss, LIC=RC93N-YPJHY-TGY7T-RPYQM-8ZHP5-D5WTX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\user\Desktop\자기개발자료\2.Git\first_class\first_start\MDK-ARM\first_start.uvprojx
+Project File Date:  01/29/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'first_start'
+assembling startup_stm32f429xx.s...
+compiling main.c...
+../Core/Src/main.c(139): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOB, LED_red_Pin, 0);
+../Core/Src/main.c(144): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOB, LED_red_Pin, 1);
+../Core/Src/main.c(76): warning:  #177-D: variable "a"  was declared but never referenced
+  	uint8_t a= 'a';
+../Core/Src/main.c(77): warning:  #177-D: variable "eeprom_test"  was declared but never referenced
+  	uint8_t eeprom_test[10]= {0x00, 0x11, 0x22,0x33,0x44,0x55,0x66,0x77,0x88,0x99};
+../Core/Src/main.c(79): warning:  #177-D: variable "AT24C256C_addr"  was declared but never referenced
+  	uint16_t AT24C256C_addr = 0xA8;  //including W bit
+../Core/Src/main.c: 5 warnings, 0 errors
+compiling i2c.c...
+compiling gpio.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_it.c...
+compiling usart.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_uart.c...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=8502 RO-data=486 RW-data=16 ZI-data=1784  
+FromELF: creating hex file...
+"first_start\first_start.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_first_start
+  C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\user\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:46
+</pre>
+</body>
+</html>
